@@ -433,28 +433,61 @@ li a .und-menu img { filter: grayscale(100%) contrast(85%) opacity(35%); transit
 .i-coluna > div:nth-of-type(1) {
     font-family: ExoMedium;
     color: #eb7e00;
-    font-size: 2em;
+    font-size: 35px;
     line-height: 1;
     padding: 20px 0px;
 }
 .i-coluna > div:nth-of-type(2) {
 	font-family: ExoMedium;
-	font-size: 1em;
+	font-size: 24px;
 	color: #465b66;
+    line-height: 1.3em;
 }
 .i-coluna > a:nth-of-type(1) { margin: 20px 0px; }
 .i-carousel {
 	flex-grow: 1;
 	width: 40%;
+    background: #005f5f;
+    height: 100%;
+}
+.i-carousel div div div img {
+    margin: auto;
+    padding-top: 30px;
+}
+.i-carousel div div div h3, .i-carousel div div div div {
+    padding: 0px 38px;
+    color: #ffbe3c;
+    font-family: Exo;
+}
+.i-carousel div div div h3 {
+    color: #ffbe3c;
+    font-family: Exo;
+}
+.i-carousel div div div div {
+    padding-bottom: 30px;
+    color: #FFF;
+    font-family: ExoLight;
+    font-size: 1em;
+}
+/* INSTITUTO */
+
+/* SLIDER TOPO */
+
+#bannertopo {
+    border-bottom-color: #ffbe3c;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
 }
 
 
-/* INSTITUTO */
+
+/* ~eof SLIDER TOPO */
 
 .titulo-up-invertido, .titulo-down-invertido {
-	line-height: 28px;
+	font-size: 50px;
     margin: 0px;
     color: #465b66;
+    line-height: 40px;
 }
 .titulo-up-invertido {
 	font-family: ExoMedium;   
@@ -462,9 +495,7 @@ li a .und-menu img { filter: grayscale(100%) contrast(85%) opacity(35%); transit
 .titulo-down-invertido {
 	font-family: ExoBlack;
 }
-
 /* SMARTPHONES */
-
 @media(max-width:767px) {
 	/* FOOTER */
 	.contato { flex-flow: row wrap; }
@@ -495,8 +526,10 @@ li a .und-menu img { filter: grayscale(100%) contrast(85%) opacity(35%); transit
 	.und-fotos img { padding-left: unset; padding-bottom: unset; width: 100%; padding: 10px 0px; }
 	/* DIA A DIA */
 	.g-item { width: 100%; margin: 10px 0px; }
+    /**/
+    .instituto { flex-flow: column wrap; }
+    .i-coluna, .i-carousel { width: 100%; }
 }
-
 
 /* sobreescreve o bootstrap */
 .btn {
@@ -578,6 +611,24 @@ li a .und-menu img { filter: grayscale(100%) contrast(85%) opacity(35%); transit
     background-color: #005f5f;
     border-color: #005f5f;
     font-family: ExoMedium;
+}
+
+.navbar-static-top {
+    margin-bottom: 0px;
+}
+
+.btn-ctr {
+    border-color: #000;
+    border-style: solid;
+    border-width: 4px;
+    height: 120px;
+}
+
+.btn-ctr-inside {
+    border-color: #000;
+    border-style: solid;
+    border-width: 4px;
+    height: 120px;   
 }
 
 /* FONTES */
