@@ -42,7 +42,6 @@
 .f-endereco, .f-telefone {
 	padding: 15px 0px;
 	display: flex;
-
 }
 .f-endereco {
 	border-top-style: solid;
@@ -618,17 +617,23 @@ li a .und-menu img { filter: grayscale(100%) contrast(85%) opacity(35%); transit
 }
 
 .btn-ctr {
-    border-color: #000;
+    border-color: #FFF;
     border-style: solid;
-    border-width: 4px;
+    border-width: 6px;
     height: 120px;
+    width: 80%;
+    margin: auto;
 }
 
 .btn-ctr-inside {
-    border-color: #000;
+    border-color: #FFF;
     border-style: solid;
-    border-width: 4px;
-    height: 120px;   
+    border-width: 6px;
+    height: 120px;
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 100%;
+    clip-path: polygon(35% 60%, 96% 60%, 100% -215%, 100% 100%, 0% 100%, 0% 68%);
 }
 
 /* FONTES */
