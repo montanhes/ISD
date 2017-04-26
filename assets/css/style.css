@@ -518,25 +518,87 @@ li a .und-menu img { filter: grayscale(100%) contrast(85%) opacity(35%); transit
 /* SOCIALBAR */
 
 #socialbar {
-    background: linear-gradient(90deg, #eb7e00 64%, #ffbe3c 36%);
+    background: linear-gradient(90deg, #eb7e00 50%, #ffbe3c 50%);
 }
 .socialbar {
     height: 32px;
-}
-.socialbar ul {
     display: flex;
-    list-style: none;
-    height: 100%;
-    margin: 0px;
-    align-items: center;
     justify-content: flex-end;
 }
-.socialbar ul li a {
-    padding: 8px 12px;
-    background: #8BC34A;
+
+.s-social {
+    display: flex;
+    align-items: center;
+}
+.s-social > div {
+    width: 32px;
+    height: 32px;
+}
+.s-social > div a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #eb7e00;
+    transition: 500ms;
+    font-size: 1.4em;
+    text-decoration: none;
+}
+.s-social > div a:hover {
+    color: #d80900;
+    transition: 500ms;
+    background: #eb7e00;
+}
+.s-busca {
+    padding-left: 100%;
+    padding-right: 10px;
+    background: #eb7e00;
+    display: flex;
+    align-items: center;
+}
+.s-busca a {
+    background: #ffbe3c;
+    color: #eb7e00;
+    padding: 2px 8px;
 }
 
 /* ~eof SOCIALBAR */
+
+/* MENU */
+
+.navbar-brand img {
+    width: 100%;
+    position: relative;
+    top: -47px;
+    margin: auto;
+    box-shadow: 0 0px 0px 0px transparent, 0 0px 0px 0px transparent, 5px 0 15px -1px rgba(0, 0, 0, 0.5), -5px 0 15px -1px rgba(0, 0, 0, 0.5);
+}
+.acesso-info {
+    color: #ffffff;
+    background-color: #ffbe3c;
+    padding: 4px 10px;
+    margin: 11px 0px;
+    text-decoration: none;
+    transition: 500ms;
+}
+.acesso-info:hover { 
+    color: #FFF;
+    background-color: #005f5f;
+    text-decoration: none;
+    transition: 500ms;
+}
+
+/* ~eof MENU */
+
+/* TRADUÇÃO */
+
+#translation {
+    background: #005f5f;
+    height: 23px;
+}
+
+/* ~eof TRADUÇÃO */
 
 .titulo-up-invertido, .titulo-down-invertido {
 	font-size: 50px;
@@ -667,12 +729,58 @@ li a .und-menu img { filter: grayscale(100%) contrast(85%) opacity(35%); transit
     border-color: #005f5f;
     font-family: ExoMedium;
 }
-
 .navbar-static-top {
     margin-bottom: 0px;
 }
-
-
+.nav>li>a {
+    font-family: ExoMedium;
+    color: #465b66;
+}
+.nav>li::after {
+    content: "\0007";
+    position: absolute;
+    right: -3px;
+    top: 20px;
+    color: darkred;
+    font-size: 0.7em;
+}
+.nav>li:last-of-type::after {
+    content: "";
+}
+.navbar-default .navbar-nav>.active>a {
+    color: #ffbe3c;
+    background-color: transparent;
+    transition: 500ms;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #ffbe3c;
+    background-color: transparent;
+    transition: 500ms;
+}
+.navbar-default .navbar-nav>li>a:focus {
+    color: #ffbe3c;
+    background-color: transparent;
+    transition: 500ms;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #ffbe3c;
+    background-color: transparent;
+    transition: 500ms;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #465b66;
+    transition: 500ms;
+}
+.navbar-default {
+    background-color: #fff;
+    border-color: transparent;
+}
+.navbar {
+    border: 0px;
+}
+.nav>li {
+    font-size: 1em;
+}
 
 /* FONTES */
 

@@ -17,6 +17,10 @@
 
 <body>
 
+    <section id="translation">
+       
+    </section>    
+
     <!-- Static navbar -->
     <nav class="navbar navbar-default navbar-static-top">
         <div class="container">
@@ -27,31 +31,19 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Project name</a>
+                <a class="navbar-brand" href="#"><img src="assets/imgs/logo-isd.png"></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li class="dropdown-header">Nav header</li>
-                            <li><a href="#">Separated link</a></li>
-                            <li><a href="#">One more separated link</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="../navbar/">Default</a></li>
-                    <li class="active"><a href="./">Static top <span class="sr-only">(current)</span></a></li>
-                    <li><a href="../navbar-fixed-top/">Fixed top</a></li>
-                </ul>
+                    <li class="active"><a href="#">O ISD</a></li>
+                    <li><a href="#about">Unidades</a></li>
+                    <li><a href="#contact">Ensino</a></li>
+                    <li><a href="#">Pesquisa</a></li>
+                    <li><a href="#about">Extensão</a></li>
+                    <li><a href="#contact">Imprensa e Eventos</a></li>
+                    <li><a href="#contact">Oportunidades</a></li>
+                </ul>                
+                <a class="nav navbar-nav navbar-right acesso-info" href="./">Acesso à Informação</a>                
             </div><!--/.nav-collapse -->
         </div>
     </nav>
@@ -62,12 +54,15 @@
     <section id="socialbar">
         <div class="container">        
             <div class="socialbar">
-                <ul>
-                    <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                    <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                    <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-                </ul>
+                <div class="s-busca">
+                    <input type="text" name="busca"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+                </div>
+                <div class="s-social">
+                    <div><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
+                    <div><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+                    <div><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+                    <div><a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a></div>
+                </div>
             </div>
         </div>        
     </section>
@@ -471,15 +466,11 @@
             </div>
         </section>
     </footer>
-<!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/tab.js"></script>
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
     <script src="assets/js/masonry.pkgd.min.js"></script>
-
     <script type="text/javascript">
         /* Masonry */
         var grid = document.querySelector('.galeria');
