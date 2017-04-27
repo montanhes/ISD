@@ -741,7 +741,7 @@ li a .und-menu img { filter: grayscale(100%) contrast(85%) opacity(35%); transit
     position: absolute;
     right: -3px;
     top: 20px;
-    color: darkred;
+    color: #ffbe3c;
     font-size: 0.7em;
 }
 .nav>li:last-of-type::after {
@@ -808,3 +808,56 @@ li a .und-menu img { filter: grayscale(100%) contrast(85%) opacity(35%); transit
     font-weight: Light;
     src: url("../fonts/exo2-light.otf") format("opentype");
 }
+
+
+
+
+
+
+
+
+
+
+/* somente necessário na página de unidades */
+
+/* unidades interna */
+
+.u-menu {
+    display: flex;
+    color: #385a66;
+    margin-top: 40px;
+}
+
+.u-titulo, .u-d-titulo {
+    font-family: ExoMedium;
+    line-height: 1em;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.u-subtitulo {
+    font-family: ExoBold;
+    line-height: 1em;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.u-conteudo {
+    display: flex;
+    padding-top: 40px;
+}
+.u-texto {
+    width: 70%;
+    padding-right: 20px;
+    color: #465b66;
+    font-size: 1.5em;
+    font-family: ExoLight;
+}
+.u-imgs {
+    width: 30%;
+    padding-left: 20px;
+}
+.u-imgs img {
+    margin-bottom: 25px;
+}
+/* ~eof unidades interna */
