@@ -860,6 +860,46 @@ li a .und-menu img { filter: grayscale(100%) contrast(85%) opacity(35%); transit
 .titulo-down-invertido {
 	font-family: ExoBlack;
 }
+
+/* somente necessário na página de unidades */
+/* unidades interna */
+.u-menu {
+    display: flex;
+    color: #385a66;
+    margin-top: 40px;
+}
+.u-titulo, .u-d-titulo {
+    font-family: ExoMedium;
+    line-height: 1em;
+    margin: 0;
+    padding-left: 20px;
+}
+.u-subtitulo {
+    font-family: ExoBold;
+    line-height: 1em;
+    margin: 0;
+    padding-left: 20px;
+}
+.u-conteudo {
+    display: flex;
+    padding-top: 40px;
+}
+.u-texto {
+    width: 70%;
+    padding-right: 20px;
+    color: #465b66;
+    font-size: 1.5em;
+    font-family: ExoLight;
+}
+.u-imgs {
+    width: 30%;
+    padding-left: 20px;
+}
+.u-imgs img {
+    margin-bottom: 25px;
+}
+/* ~eof unidades interna */
+
 /* SMARTPHONES */
 @media(max-width:767px) {
 	/* FOOTER */
@@ -891,9 +931,27 @@ li a .und-menu img { filter: grayscale(100%) contrast(85%) opacity(35%); transit
 	.und-fotos img { padding-left: unset; padding-bottom: unset; width: 100%; padding: 10px 0px; }
 	/* DIA A DIA */
 	.g-item { width: 100%; margin: 10px 0px; }
-    /**/
+    /* index */
     .instituto { flex-flow: column wrap; }
-    .i-coluna, .i-carousel { width: 100%; }
+    .i-coluna, .i-carousel { width: 100%; }    
+    /* single notícias */
+    .n-conteudo { width: 100%; padding-right: 0px; }
+    .n-menu { width: 100%; padding-left: 20px; }
+    #recomendamos { flex-flow: row wrap; }
+    .r-recomendamos { width: 100%; margin: 0px; }
+    .n-conteudo h2 { font-size: 2.4em; }
+    .n-conteudo p, .n-conteudo h6, .n-conteudo ul { font-size: 1em; word-wrap: break-word; }
+    .noticias { flex-flow: row wrap; }
+    .n-menu { padding-top: 30px; padding-left: 0px; }
+    /* unidades */
+    .u-conteudo { flex-flow: row wrap; }
+    .u-imgs img { width: 100%; }
+    .u-texto { width: 100%; padding-right: 0px; }
+    .u-imgs { width: 100%; padding-left: 0px; }
+    /* barra de navegação mobile */
+    .acesso-info { display: block; width: 45%; padding: 10px; margin: 15px 0px; text-align: center; }
+    .nav>li::after { content: " " !important; }
+    .navbar-brand img { width: 65%; }
 }
 @media (min-width: 768px) {
     .cont-more {
@@ -1096,46 +1154,7 @@ li a .und-menu img { filter: grayscale(100%) contrast(85%) opacity(35%); transit
     src: url("../fonts/exo2-semibold.otf") format("opentype");
 }
 
-/* somente necessário na página de unidades */
 
-/* unidades interna */
-
-.u-menu {
-    display: flex;
-    color: #385a66;
-    margin-top: 40px;
-}
-.u-titulo, .u-d-titulo {
-    font-family: ExoMedium;
-    line-height: 1em;
-    margin: 0;
-    padding-left: 20px;
-}
-.u-subtitulo {
-    font-family: ExoBold;
-    line-height: 1em;
-    margin: 0;
-    padding-left: 20px;
-}
-.u-conteudo {
-    display: flex;
-    padding-top: 40px;
-}
-.u-texto {
-    width: 70%;
-    padding-right: 20px;
-    color: #465b66;
-    font-size: 1.5em;
-    font-family: ExoLight;
-}
-.u-imgs {
-    width: 30%;
-    padding-left: 20px;
-}
-.u-imgs img {
-    margin-bottom: 25px;
-}
-/* ~eof unidades interna */
 
 /* erase */
 
