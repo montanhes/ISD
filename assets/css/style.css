@@ -952,6 +952,7 @@ li a .und-menu img { filter: grayscale(100%) contrast(85%) opacity(35%); transit
     .acesso-info { display: block; width: 45%; padding: 10px; margin: 15px 0px; text-align: center; }
     .nav>li::after { content: " " !important; }
     .navbar-brand img { width: 65%; }
+    .u-titulo, .u-subtitulo, .u-d-titulo { font-size: 20px; }
 }
 @media (min-width: 768px) {
     .cont-more {
@@ -1121,6 +1122,14 @@ li a .und-menu img { filter: grayscale(100%) contrast(85%) opacity(35%); transit
 .nav>li {
     font-size: 1em;
 }
+.navbar-toggle { 
+    border-radius: 0px; 
+    border-color: #ffbe3c;
+    background-color: #ffbe3c;
+}
+.navbar-default .navbar-toggle { border-color: #ffbe3c; }
+.navbar-default .navbar-toggle:hover { background-color: #ffbe3c; }
+.navbar-default .navbar-toggle .icon-bar { background-color: #eb7e00; }
 
 /* FONTES */
 
